@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "defaultCategory": "General",
+  "rules": [
+    {
+      "label": "GitHub work",
+      "mode": "any",
+      "conditions": [
+        { "field": "promptSnippet", "regex": "\\b(github|pull request|pull requests|pr review|review comments|issues?|ci runs?|workflow)\\b" },
+        { "field": "subject", "regex": "github|pull request|issues?" }
+      ]
+    },
+    {
+      "label": "Build work",
+      "mode": "any",
+      "conditions": [
+        { "field": "promptSnippet", "regex": "\\b(build|implement|scaffold|script|code|dashboard|exporter|refactor|fix|bug|mvp)\\b" },
+        { "field": "subject", "regex": "dashboard|build|mvp" }
+      ]
+    },
+    {
+      "label": "Content work",
+      "mode": "any",
+      "conditions": [
+        { "field": "promptSnippet", "regex": "\\b(write|rewrite|caption|copy|post|tweet|social|seo|landing page)\\b" }
+      ]
+    },
+    {
+      "label": "Automation",
+      "mode": "any",
+      "conditions": [
+        { "field": "promptSnippet", "regex": "\\b(heartbeat|cron|automation|schedule|scheduled|daily workflow)\\b" },
+        { "field": "subject", "regex": "automation" }
+      ]
+    },
+    {
+      "label": "Subagent work",
+      "mode": "all",
+      "conditions": [
+        { "field": "sessionKind", "equals": "subagent" }
+      ]
+    }
+  ]
+}
