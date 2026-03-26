@@ -111,8 +111,8 @@ function renderDailyTable(data) {
     .join("");
 }
 
-async function main() {
-  const response = await fetch("data/summary.json", { cache: "no-store" });
+async function loadDashboard() {
+  const response = await fetch(`data/summary.json?t=${Date.now()}`, { cache: "no-store" });
   if (!response.ok) throw new Error(`Failed to load data: ${response.status}`);
   const data = await response.json();
   renderOverview(data);
@@ -122,6 +122,39 @@ async function main() {
   renderBreakdown("breakdown-sessionKind", data.breakdowns.sessionKind || []);
   renderBreakdown("breakdown-provider", data.breakdowns.provider || []);
   renderDailyTable(data);
+}
+
+async function refreshDashboard() {
+  const button = document.getElementById("update-button");
+  if (button) {
+    button.disabled = true;
+    button.textContent = "Updating…";
+  }
+
+  try {
+    await loadDashboard();
+    if (button) button.textContent = "Updated";
+  } catch (error) {
+    if (button) button.textContent = "Retry update";
+    throw error;
+  } finally {
+    if (button) {
+      window.setTimeout(() => {
+        button.disabled = false;
+        button.textContent = "Update";
+      }, 900);
+    }
+  }
+}
+
+async function main() {
+  document.getElementById("update-button")?.addEventListener("click", () => {
+    refreshDashboard().catch((error) => {
+      console.error(error);
+    });
+  });
+
+  await loadDashboard();
 }
 
 main().catch((error) => {

@@ -60,10 +60,38 @@ body {
   color: var(--muted);
 }
 
+.hero-meta-wrap {
+  display: grid;
+  gap: 12px;
+}
+
 .hero-meta {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 10px;
+}
+
+.update-button {
+  appearance: none;
+  border: 1px solid rgba(124, 198, 255, 0.35);
+  background: linear-gradient(180deg, rgba(124, 198, 255, 0.18) 0%, rgba(63, 127, 255, 0.2) 100%);
+  color: var(--text);
+  border-radius: 12px;
+  padding: 10px 14px;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 120ms ease, opacity 120ms ease, border-color 120ms ease;
+}
+
+.update-button:hover {
+  transform: translateY(-1px);
+  border-color: rgba(124, 198, 255, 0.6);
+}
+
+.update-button:disabled {
+  cursor: wait;
+  opacity: 0.8;
 }
 
 .hero-meta div,
