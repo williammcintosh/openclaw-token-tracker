@@ -227,6 +227,32 @@ body {
   background: linear-gradient(90deg, var(--accent), var(--accent-2));
 }
 
+.billing-stats {
+  margin-top: 0;
+  margin-bottom: 14px;
+}
+
+.cycle-chart {
+  display: grid;
+  gap: 12px;
+}
+
+.cycle-row {
+  display: grid;
+  gap: 6px;
+}
+
+.cycle-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 0.92rem;
+}
+
+.cycle-progress {
+  height: 12px;
+}
+
 .table-wrap {
   overflow-x: auto;
 }

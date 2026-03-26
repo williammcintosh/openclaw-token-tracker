@@ -52,6 +52,103 @@ function renderOverview(data) {
   ].join("");
 }
 
+function emptyRollup() {
+  return {
+    assistantMessages: 0,
+    inputTokens: 0,
+    outputTokens: 0,
+    cacheReadTokens: 0,
+    cacheWriteTokens: 0,
+    totalTokens: 0,
+    costTotal: 0,
+    activeDays: 0,
+  };
+}
+
+function getBillingCycleStart(dayString, cutoffDay = 26) {
+  const [year, month, day] = dayString.split("-").map(Number);
+  const startMonth = day >= cutoffDay ? month : month - 1;
+  const start = new Date(Date.UTC(year, startMonth - 1, cutoffDay));
+  return start.toISOString().slice(0, 10);
+}
+
+function addMonthsUtc(date, months) {
+  return new Date(Date.UTC(date.getUTCFullYear(), date.getUTCMonth() + months, date.getUTCDate()));
+}
+
+function buildBillingCycles(data, cutoffDay = 26) {
+  const cycles = new Map();
+
+  for (const row of data.daily || []) {
+    const cycleStart = getBillingCycleStart(row.day, cutoffDay);
+    if (!cycles.has(cycleStart)) {
+      const startDate = new Date(`${cycleStart}T00:00:00Z`);
+      const endDate = addMonthsUtc(startDate, 1);
+      endDate.setUTCDate(endDate.getUTCDate() - 1);
+      cycles.set(cycleStart, {
+        start: cycleStart,
+        end: endDate.toISOString().slice(0, 10),
+        ...emptyRollup(),
+      });
+    }
+
+    const cycle = cycles.get(cycleStart);
+    cycle.assistantMessages += row.assistantMessages || 0;
+    cycle.inputTokens += row.inputTokens || 0;
+    cycle.outputTokens += row.outputTokens || 0;
+    cycle.cacheReadTokens += row.cacheReadTokens || 0;
+    cycle.cacheWriteTokens += row.cacheWriteTokens || 0;
+    cycle.totalTokens += row.totalTokens || 0;
+    cycle.costTotal += row.costTotal || 0;
+    cycle.activeDays += 1;
+  }
+
+  return Array.from(cycles.values()).sort((a, b) => a.start.localeCompare(b.start));
+}
+
+function renderBillingCycles(data) {
+  const cycles = buildBillingCycles(data);
+  const current = cycles.at(-1);
+  const previous = cycles.length > 1 ? cycles.at(-2) : null;
+  const maxTokens = Math.max(...cycles.map((cycle) => cycle.totalTokens), 1);
+
+  document.getElementById("billing-cycle-cards").innerHTML = current
+    ? [
+        statCard("Current cycle", fmtInt.format(current.totalTokens), `${current.start} → ${current.end}`),
+        statCard("Current messages", fmtInt.format(current.assistantMessages), `${fmtInt.format(current.activeDays)} active days`),
+        statCard(
+          "Previous cycle",
+          previous ? fmtInt.format(previous.totalTokens) : "—",
+          previous ? `${previous.start} → ${previous.end}` : "Not enough history yet"
+        ),
+        statCard(
+          "Cycle change",
+          previous && previous.totalTokens
+            ? `${previous.totalTokens === 0 ? "—" : `${current.totalTokens >= previous.totalTokens ? "+" : ""}${percent((current.totalTokens - previous.totalTokens) / previous.totalTokens)}`}`
+            : "—",
+          previous ? "Current vs previous cycle" : "Need at least two cycles"
+        ),
+      ].join("")
+    : `<p class="muted">No billing-cycle data yet.</p>`;
+
+  document.getElementById("billing-chart").innerHTML = cycles
+    .slice()
+    .reverse()
+    .map(
+      (cycle) => `
+        <div class="cycle-row">
+          <div class="cycle-meta">
+            <strong>${escapeHtml(cycle.start)} → ${escapeHtml(cycle.end)}</strong>
+            <span>${fmtInt.format(cycle.totalTokens)} tokens · ${fmtInt.format(cycle.assistantMessages)} messages</span>
+          </div>
+          <div class="progress cycle-progress"><span style="width:${Math.max(4, (cycle.totalTokens / maxTokens) * 100)}%"></span></div>
+          <div class="muted">${fmtInt.format(cycle.activeDays)} active days · ${fmtMoney.format(cycle.costTotal || 0)}</div>
+        </div>
+      `
+    )
+    .join("");
+}
+
 function renderDailyChart(data) {
   const chart = document.getElementById("daily-chart");
   const rows = (data.daily || []).slice(-30);
@@ -116,6 +213,7 @@ async function loadDashboard() {
   if (!response.ok) throw new Error(`Failed to load data: ${response.status}`);
   const data = await response.json();
   renderOverview(data);
+  renderBillingCycles(data);
   renderDailyChart(data);
   renderBreakdown("breakdown-category", data.breakdowns.category || []);
   renderBreakdown("breakdown-model", data.breakdowns.model || []);
