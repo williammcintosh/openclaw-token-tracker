@@ -224,22 +224,29 @@ async function loadDashboard() {
 
 async function refreshDashboard() {
   const button = document.getElementById("update-button");
+  const help = document.getElementById("update-help");
   if (button) {
     button.disabled = true;
-    button.textContent = "Updating…";
+    button.textContent = "Refreshing…";
   }
 
   try {
     await loadDashboard();
-    if (button) button.textContent = "Updated";
+    if (button) button.textContent = "Refreshed";
+    if (help) {
+      help.textContent = "Reloaded the latest published summary.json. To generate new numbers, run the exporter locally and redeploy.";
+    }
   } catch (error) {
-    if (button) button.textContent = "Retry update";
+    if (button) button.textContent = "Retry refresh";
+    if (help) {
+      help.textContent = "Could not reload summary.json. Check the deployment or try again.";
+    }
     throw error;
   } finally {
     if (button) {
       window.setTimeout(() => {
         button.disabled = false;
-        button.textContent = "Update";
+        button.textContent = "Refresh data";
       }, 900);
     }
   }

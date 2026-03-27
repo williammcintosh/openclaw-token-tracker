@@ -71,6 +71,11 @@ body {
   gap: 10px;
 }
 
+.update-controls {
+  display: grid;
+  gap: 8px;
+}
+
 .update-button {
   appearance: none;
   border: 1px solid rgba(124, 198, 255, 0.35);
@@ -82,6 +87,24 @@ body {
   font-weight: 700;
   cursor: pointer;
   transition: transform 120ms ease, opacity 120ms ease, border-color 120ms ease;
+}
+
+.update-help {
+  margin: 0;
+  font-size: 0.83rem;
+  max-width: 34rem;
+}
+
+@media (min-width: 900px) {
+  .update-controls {
+    justify-items: end;
+  }
+}
+
+@media (max-width: 720px) {
+  .update-controls {
+    justify-items: stretch;
+  }
 }
 
 .update-button:hover {

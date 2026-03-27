@@ -22,7 +22,10 @@
             <div><span>Range</span><strong id="date-range">—</strong></div>
             <div><span>Events</span><strong id="event-count">—</strong></div>
           </div>
-          <button id="update-button" class="update-button" type="button">Update</button>
+          <div class="update-controls">
+            <button id="update-button" class="update-button" type="button">Refresh data</button>
+            <p id="update-help" class="update-help muted">Refreshes the published JSON already on this site. To generate new numbers, run the exporter locally and redeploy.</p>
+          </div>
         </div>
       </header>
 
