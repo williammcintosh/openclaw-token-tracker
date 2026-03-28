@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OpenClaw Usage Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="hero card">
+        <div>
+          <p class="eyebrow">OpenClaw OAuth usage</p>
+          <h1>Usage dashboard</h1>
+          <p class="muted">
+            Sanitised local export for static publishing. No message text, chat IDs, or secrets.
+          </p>
+        </div>
+        <div class="hero-meta-wrap">
+          <div class="hero-meta">
+            <div><span>Generated</span><strong id="generated-at">—</strong></div>
+            <div><span>Range</span><strong id="date-range">—</strong></div>
+            <div><span>Events</span><strong id="event-count">—</strong></div>
+          </div>
+          <div class="update-controls">
+            <button id="update-button" class="update-button" type="button">Refresh data</button>
+            <p id="update-help" class="update-help muted">Refreshes the published JSON already on this site. To generate new numbers, run the exporter locally and redeploy.</p>
+          </div>
+        </div>
+      </header>
+
+      <section class="stats-grid" id="overview-cards"></section>
+
+      <section class="card">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Billing cycle</p>
+            <h2>26th → 25th window</h2>
+          </div>
+          <p class="muted">Monthly usage grouped to match your preferred billing window.</p>
+        </div>
+        <div class="stats-grid billing-stats" id="billing-cycle-cards"></div>
+        <div id="billing-chart" class="cycle-chart"></div>
+      </section>
+
+      <section class="card">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Daily</p>
+            <h2>Token trend</h2>
+          </div>
+          <p class="muted">Last 30 days, total tokens per assistant response batch.</p>
+        </div>
+        <div id="daily-chart" class="daily-chart"></div>
+      </section>
+
+      <section class="breakdown-grid">
+        <section class="card">
+          <div class="section-head compact">
+            <div>
+              <p class="eyebrow">Breakdown</p>
+              <h2>By category</h2>
+            </div>
+          </div>
+          <div id="breakdown-category" class="breakdown-list"></div>
+        </section>
+
+        <section class="card">
+          <div class="section-head compact">
+            <div>
+              <p class="eyebrow">Breakdown</p>
+              <h2>By model</h2>
+            </div>
+          </div>
+          <div id="breakdown-model" class="breakdown-list"></div>
+        </section>
+
+        <section class="card">
+          <div class="section-head compact">
+            <div>
+              <p class="eyebrow">Breakdown</p>
+              <h2>By session kind</h2>
+            </div>
+          </div>
+          <div id="breakdown-sessionKind" class="breakdown-list"></div>
+        </section>
+
+        <section class="card">
+          <div class="section-head compact">
+            <div>
+              <p class="eyebrow">Breakdown</p>
+              <h2>By provider</h2>
+            </div>
+          </div>
+          <div id="breakdown-provider" class="breakdown-list"></div>
+        </section>
+      </section>
+
+      <section class="card">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Recent days</p>
+            <h2>Daily detail</h2>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Day</th>
+                <th>Messages</th>
+                <th>Total tokens</th>
+                <th>Input</th>
+                <th>Output</th>
+                <th>Cache read</th>
+                <th>Cost</th>
+              </tr>
+            </thead>
+            <tbody id="daily-table"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="card privacy-note">
+        <p>
+          <strong>Privacy:</strong> this dashboard reads local OpenClaw session data, but the publishable JSON only contains aggregates and safe labels.
+        </p>
+        <p class="muted">
+          Categories are inferred with local rule-based matching, not ongoing AI analysis.
+        </p>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
