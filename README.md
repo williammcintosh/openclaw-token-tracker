@@ -1,17 +1,23 @@
-# site/
+# openclaw-token-tracker
 
-Static files for GitHub Pages.
+Sanitized OpenClaw token usage dashboard.
 
-Publish this directory after generating fresh data:
+## Publish/update locally
 
 ```bash
-python3 ../scripts/export_usage.py
+python3 scripts/export_usage.py
 ```
 
-Safe to publish:
-- `index.html`
-- `app.js`
-- `styles.css`
-- `data/summary.json`
+Preview:
 
-Do not publish anything from `../data/private/`.
+```bash
+python3 -m http.server 8080 -d site
+```
+
+## Privacy
+
+Published data excludes message text, chat IDs, user IDs, prompts, tool arguments, and secrets.
+
+## GitHub Pages
+
+This repo publishes the `site/` directory via GitHub Pages.
