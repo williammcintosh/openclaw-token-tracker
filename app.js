@@ -222,43 +222,7 @@ async function loadDashboard() {
   renderDailyTable(data);
 }
 
-async function refreshDashboard() {
-  const button = document.getElementById("update-button");
-  const help = document.getElementById("update-help");
-  if (button) {
-    button.disabled = true;
-    button.textContent = "Refreshing…";
-  }
-
-  try {
-    await loadDashboard();
-    if (button) button.textContent = "Refreshed";
-    if (help) {
-      help.textContent = "Reloaded the latest published summary.json. To generate new numbers, run the exporter locally and redeploy.";
-    }
-  } catch (error) {
-    if (button) button.textContent = "Retry refresh";
-    if (help) {
-      help.textContent = "Could not reload summary.json. Check the deployment or try again.";
-    }
-    throw error;
-  } finally {
-    if (button) {
-      window.setTimeout(() => {
-        button.disabled = false;
-        button.textContent = "Refresh data";
-      }, 900);
-    }
-  }
-}
-
 async function main() {
-  document.getElementById("update-button")?.addEventListener("click", () => {
-    refreshDashboard().catch((error) => {
-      console.error(error);
-    });
-  });
-
   await loadDashboard();
 }
 
