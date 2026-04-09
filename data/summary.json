@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-04-09T07:03:14Z",
+  "generatedAt": "2026-04-09T09:33:05Z",
   "privacy": {
     "publishedFields": [
       "daily aggregates",
@@ -23,200 +23,167 @@
     ]
   },
   "source": {
-    "sessionFilesScanned": 102,
-    "assistantUsageEventsStored": 5090,
-    "currentSessions": 39
+    "sessionFilesScanned": 89,
+    "assistantUsageEventsStored": 4563,
+    "currentSessions": 30
   },
   "window": {
     "from": "2026-03-17",
     "to": "2026-04-09",
-    "days": 21
+    "days": 19
   },
   "totals": {
-    "assistantMessages": 5090,
-    "inputTokens": 55398719,
-    "outputTokens": 1486167,
-    "cacheReadTokens": 319071104,
+    "assistantMessages": 4563,
+    "inputTokens": 49002903,
+    "outputTokens": 1353750,
+    "cacheReadTokens": 283482880,
     "cacheWriteTokens": 0,
-    "totalTokens": 375955990,
-    "costTotal": 218.095846
+    "totalTokens": 333839533,
+    "costTotal": 192.889311
   },
   "breakdowns": {
     "category": [
       {
         "label": "General",
-        "assistantMessages": 3328,
-        "inputTokens": 34780299,
-        "outputTokens": 930685,
-        "cacheReadTokens": 205330816,
+        "assistantMessages": 3125,
+        "inputTokens": 34113977,
+        "outputTokens": 884619,
+        "cacheReadTokens": 200240896,
         "cacheWriteTokens": 0,
-        "totalTokens": 241041800,
-        "costTotal": 130.49337,
-        "shareOfTotalTokens": 0.6411
+        "totalTokens": 235239492,
+        "costTotal": 128.092478,
+        "shareOfTotalTokens": 0.7046
       },
       {
         "label": "Automation",
-        "assistantMessages": 824,
-        "inputTokens": 7617214,
-        "outputTokens": 264213,
-        "cacheReadTokens": 53031552,
+        "assistantMessages": 924,
+        "inputTokens": 8755651,
+        "outputTokens": 296556,
+        "cacheReadTokens": 60521344,
         "cacheWriteTokens": 0,
-        "totalTokens": 60912979,
-        "costTotal": 35.928804,
-        "shareOfTotalTokens": 0.162
-      },
-      {
-        "label": "Build work",
-        "assistantMessages": 524,
-        "inputTokens": 7460448,
-        "outputTokens": 160684,
-        "cacheReadTokens": 41574912,
-        "cacheWriteTokens": 0,
-        "totalTokens": 49196044,
-        "costTotal": 31.455108,
-        "shareOfTotalTokens": 0.1309
+        "totalTokens": 69573551,
+        "costTotal": 41.194861,
+        "shareOfTotalTokens": 0.2084
       },
       {
         "label": "GitHub work",
-        "assistantMessages": 414,
-        "inputTokens": 5540758,
-        "outputTokens": 130585,
-        "cacheReadTokens": 19133824,
+        "assistantMessages": 350,
+        "inputTokens": 5389512,
+        "outputTokens": 117878,
+        "cacheReadTokens": 17798272,
         "cacheWriteTokens": 0,
-        "totalTokens": 24805167,
-        "costTotal": 20.218563,
-        "shareOfTotalTokens": 0.066
+        "totalTokens": 23305662,
+        "costTotal": 19.691518,
+        "shareOfTotalTokens": 0.0698
+      },
+      {
+        "label": "Build work",
+        "assistantMessages": 164,
+        "inputTokens": 743763,
+        "outputTokens": 54697,
+        "cacheReadTokens": 4922368,
+        "cacheWriteTokens": 0,
+        "totalTokens": 5720828,
+        "costTotal": 3.910454,
+        "shareOfTotalTokens": 0.0171
       }
     ],
     "sessionKind": [
       {
         "label": "unknown",
-        "assistantMessages": 3694,
-        "inputTokens": 39522457,
-        "outputTokens": 1095723,
-        "cacheReadTokens": 178381056,
+        "assistantMessages": 3521,
+        "inputTokens": 39571975,
+        "outputTokens": 1063901,
+        "cacheReadTokens": 178983424,
         "cacheWriteTokens": 0,
-        "totalTokens": 218999236,
-        "costTotal": 158.170935,
-        "shareOfTotalTokens": 0.5825
+        "totalTokens": 219619300,
+        "costTotal": 159.634309,
+        "shareOfTotalTokens": 0.6579
       },
       {
         "label": "group",
-        "assistantMessages": 1345,
-        "inputTokens": 15170705,
-        "outputTokens": 358238,
-        "cacheReadTokens": 138613632,
+        "assistantMessages": 1020,
+        "inputTokens": 9023601,
+        "outputTokens": 281461,
+        "cacheReadTokens": 103946112,
         "cacheWriteTokens": 0,
-        "totalTokens": 154142575,
-        "costTotal": 57.158824,
-        "shareOfTotalTokens": 0.41
-      },
-      {
-        "label": "subagent",
-        "assistantMessages": 41,
-        "inputTokens": 598125,
-        "outputTokens": 30153,
-        "cacheReadTokens": 2019200,
-        "cacheWriteTokens": 0,
-        "totalTokens": 2647478,
-        "costTotal": 2.452408,
-        "shareOfTotalTokens": 0.007
+        "totalTokens": 113251174,
+        "costTotal": 31.972529,
+        "shareOfTotalTokens": 0.3392
       },
       {
         "label": "direct",
-        "assistantMessages": 10,
-        "inputTokens": 107432,
-        "outputTokens": 2053,
-        "cacheReadTokens": 57216,
+        "assistantMessages": 22,
+        "inputTokens": 407327,
+        "outputTokens": 8388,
+        "cacheReadTokens": 553344,
         "cacheWriteTokens": 0,
-        "totalTokens": 166701,
-        "costTotal": 0.313679,
-        "shareOfTotalTokens": 0.0004
+        "totalTokens": 969059,
+        "costTotal": 1.282474,
+        "shareOfTotalTokens": 0.0029
       }
     ],
     "channel": [
       {
         "label": "unknown",
-        "assistantMessages": 3561,
-        "inputTokens": 37968181,
-        "outputTokens": 1072271,
-        "cacheReadTokens": 174325376,
+        "assistantMessages": 3466,
+        "inputTokens": 38732800,
+        "outputTokens": 1048750,
+        "cacheReadTokens": 177300224,
         "cacheWriteTokens": 0,
-        "totalTokens": 213365828,
-        "costTotal": 154.097283,
-        "shareOfTotalTokens": 0.5675
+        "totalTokens": 217081774,
+        "costTotal": 156.888306,
+        "shareOfTotalTokens": 0.6503
       },
       {
         "label": "telegram",
-        "assistantMessages": 1488,
-        "inputTokens": 16832413,
-        "outputTokens": 383743,
-        "cacheReadTokens": 142726528,
+        "assistantMessages": 1097,
+        "inputTokens": 10270103,
+        "outputTokens": 305000,
+        "cacheReadTokens": 106182656,
         "cacheWriteTokens": 0,
-        "totalTokens": 159942684,
-        "costTotal": 61.546156,
-        "shareOfTotalTokens": 0.4254
-      },
-      {
-        "label": "internal",
-        "assistantMessages": 41,
-        "inputTokens": 598125,
-        "outputTokens": 30153,
-        "cacheReadTokens": 2019200,
-        "cacheWriteTokens": 0,
-        "totalTokens": 2647478,
-        "costTotal": 2.452408,
-        "shareOfTotalTokens": 0.007
+        "totalTokens": 116757759,
+        "costTotal": 36.001005,
+        "shareOfTotalTokens": 0.3497
       }
     ],
     "model": [
       {
         "label": "gpt-5.4",
-        "assistantMessages": 4382,
-        "inputTokens": 48065854,
-        "outputTokens": 1290897,
-        "cacheReadTokens": 254874240,
+        "assistantMessages": 4006,
+        "inputTokens": 42480474,
+        "outputTokens": 1180440,
+        "cacheReadTokens": 222549376,
         "cacheWriteTokens": 0,
-        "totalTokens": 304230991,
-        "costTotal": 203.24665,
-        "shareOfTotalTokens": 0.8092
+        "totalTokens": 266210290,
+        "costTotal": 179.545129,
+        "shareOfTotalTokens": 0.7974
       },
       {
         "label": "gpt-5.1-codex",
-        "assistantMessages": 463,
-        "inputTokens": 4410064,
-        "outputTokens": 146806,
-        "cacheReadTokens": 54360064,
+        "assistantMessages": 345,
+        "inputTokens": 3660712,
+        "outputTokens": 129484,
+        "cacheReadTokens": 51470336,
         "cacheWriteTokens": 0,
-        "totalTokens": 58916934,
-        "costTotal": 13.775648,
-        "shareOfTotalTokens": 0.1567
+        "totalTokens": 55260532,
+        "costTotal": 12.304522,
+        "shareOfTotalTokens": 0.1655
       },
       {
         "label": "gpt-5-mini",
-        "assistantMessages": 202,
-        "inputTokens": 2922801,
-        "outputTokens": 48464,
-        "cacheReadTokens": 9836800,
+        "assistantMessages": 172,
+        "inputTokens": 2861717,
+        "outputTokens": 43826,
+        "cacheReadTokens": 9463168,
         "cacheWriteTokens": 0,
-        "totalTokens": 12808065,
-        "costTotal": 1.073548,
-        "shareOfTotalTokens": 0.0341
+        "totalTokens": 12368711,
+        "costTotal": 1.03966,
+        "shareOfTotalTokens": 0.037
       },
       {
         "label": "delivery-mirror",
         "assistantMessages": 40,
-        "inputTokens": 0,
-        "outputTokens": 0,
-        "cacheReadTokens": 0,
-        "cacheWriteTokens": 0,
-        "totalTokens": 0,
-        "costTotal": 0.0,
-        "shareOfTotalTokens": 0.0
-      },
-      {
-        "label": "gpt-4.1-nano",
-        "assistantMessages": 3,
         "inputTokens": 0,
         "outputTokens": 0,
         "cacheReadTokens": 0,
@@ -229,25 +196,25 @@
     "provider": [
       {
         "label": "openai-codex",
-        "assistantMessages": 3531,
-        "inputTokens": 39317558,
-        "outputTokens": 1101498,
-        "cacheReadTokens": 176478464,
+        "assistantMessages": 3504,
+        "inputTokens": 39980382,
+        "outputTokens": 1072457,
+        "cacheReadTokens": 179547264,
         "cacheWriteTokens": 0,
-        "totalTokens": 216897520,
-        "costTotal": 158.935981,
-        "shareOfTotalTokens": 0.5769
+        "totalTokens": 220600103,
+        "costTotal": 160.924626,
+        "shareOfTotalTokens": 0.6608
       },
       {
         "label": "openai",
-        "assistantMessages": 1519,
-        "inputTokens": 16081161,
-        "outputTokens": 384669,
-        "cacheReadTokens": 142592640,
+        "assistantMessages": 1019,
+        "inputTokens": 9022521,
+        "outputTokens": 281293,
+        "cacheReadTokens": 103935616,
         "cacheWriteTokens": 0,
-        "totalTokens": 159058470,
-        "costTotal": 59.159865,
-        "shareOfTotalTokens": 0.4231
+        "totalTokens": 113239430,
+        "costTotal": 31.964685,
+        "shareOfTotalTokens": 0.3392
       },
       {
         "label": "openclaw",
@@ -264,25 +231,25 @@
     "stopReason": [
       {
         "label": "toolUse",
-        "assistantMessages": 4284,
-        "inputTokens": 46505435,
-        "outputTokens": 1357092,
-        "cacheReadTokens": 276209792,
+        "assistantMessages": 3837,
+        "inputTokens": 40924164,
+        "outputTokens": 1239201,
+        "cacheReadTokens": 246128512,
         "cacheWriteTokens": 0,
-        "totalTokens": 324072319,
-        "costTotal": 188.210702,
-        "shareOfTotalTokens": 0.862
+        "totalTokens": 288291877,
+        "costTotal": 166.420099,
+        "shareOfTotalTokens": 0.8636
       },
       {
         "label": "stop",
-        "assistantMessages": 778,
-        "inputTokens": 8893284,
-        "outputTokens": 129075,
-        "cacheReadTokens": 42861312,
+        "assistantMessages": 706,
+        "inputTokens": 8078739,
+        "outputTokens": 114549,
+        "cacheReadTokens": 37354368,
         "cacheWriteTokens": 0,
-        "totalTokens": 51883671,
-        "costTotal": 29.885144,
-        "shareOfTotalTokens": 0.138
+        "totalTokens": 45547656,
+        "costTotal": 26.469213,
+        "shareOfTotalTokens": 0.1364
       },
       {
         "label": "aborted",
@@ -297,7 +264,7 @@
       },
       {
         "label": "error",
-        "assistantMessages": 26,
+        "assistantMessages": 18,
         "inputTokens": 0,
         "outputTokens": 0,
         "cacheReadTokens": 0,
@@ -311,250 +278,200 @@
   "daily": [
     {
       "day": "2026-03-17",
-      "assistantMessages": 217,
-      "inputTokens": 3681372,
-      "outputTokens": 44715,
-      "cacheReadTokens": 17044992,
+      "assistantMessages": 179,
+      "inputTokens": 3608251,
+      "outputTokens": 38218,
+      "cacheReadTokens": 16561152,
       "cacheWriteTokens": 0,
-      "totalTokens": 20771079,
-      "costTotal": 4.309963,
+      "totalTokens": 20207621,
+      "costTotal": 4.203107,
       "byCategory": [
         {
           "label": "General",
-          "assistantMessages": 191,
-          "inputTokens": 3624645,
-          "outputTokens": 40414,
-          "cacheReadTokens": 16690048,
+          "assistantMessages": 174,
+          "inputTokens": 3602244,
+          "outputTokens": 37312,
+          "cacheReadTokens": 16527360,
           "cacheWriteTokens": 0,
-          "totalTokens": 20355107,
-          "costTotal": 4.278305
-        },
-        {
-          "label": "GitHub work",
-          "assistantMessages": 18,
-          "inputTokens": 41735,
-          "outputTokens": 2892,
-          "cacheReadTokens": 304256,
-          "cacheWriteTokens": 0,
-          "totalTokens": 348883,
-          "costTotal": 0.023824
+          "totalTokens": 20166916,
+          "costTotal": 4.198948
         },
         {
           "label": "Automation",
-          "assistantMessages": 8,
-          "inputTokens": 14992,
-          "outputTokens": 1409,
-          "cacheReadTokens": 50688,
+          "assistantMessages": 5,
+          "inputTokens": 6007,
+          "outputTokens": 906,
+          "cacheReadTokens": 33792,
           "cacheWriteTokens": 0,
-          "totalTokens": 67089,
-          "costTotal": 0.007833
+          "totalTokens": 40705,
+          "costTotal": 0.004159
         }
       ],
       "byModel": [
         {
           "label": "gpt-5.1-codex",
-          "assistantMessages": 118,
-          "inputTokens": 1280972,
-          "outputTokens": 22495,
-          "cacheReadTokens": 14131328,
+          "assistantMessages": 101,
+          "inputTokens": 1258571,
+          "outputTokens": 19393,
+          "cacheReadTokens": 13968640,
           "cacheWriteTokens": 0,
-          "totalTokens": 15434795,
-          "costTotal": 3.592581
+          "totalTokens": 15246604,
+          "costTotal": 3.513224
         },
         {
           "label": "gpt-5-mini",
-          "assistantMessages": 99,
-          "inputTokens": 2400400,
-          "outputTokens": 22220,
-          "cacheReadTokens": 2913664,
+          "assistantMessages": 78,
+          "inputTokens": 2349680,
+          "outputTokens": 18825,
+          "cacheReadTokens": 2592512,
           "cacheWriteTokens": 0,
-          "totalTokens": 5336284,
-          "costTotal": 0.717382
+          "totalTokens": 4961017,
+          "costTotal": 0.689883
         }
       ]
     },
     {
       "day": "2026-03-18",
-      "assistantMessages": 365,
-      "inputTokens": 2090201,
-      "outputTokens": 138393,
-      "cacheReadTokens": 39815040,
+      "assistantMessages": 304,
+      "inputTokens": 1970774,
+      "outputTokens": 128314,
+      "cacheReadTokens": 38979840,
       "cacheWriteTokens": 0,
-      "totalTokens": 42043634,
-      "costTotal": 7.548895,
+      "totalTokens": 41078928,
+      "costTotal": 7.219977,
       "byCategory": [
         {
           "label": "General",
-          "assistantMessages": 306,
-          "inputTokens": 1881357,
-          "outputTokens": 128279,
-          "cacheReadTokens": 38728320,
+          "assistantMessages": 289,
+          "inputTokens": 1829768,
+          "outputTokens": 126158,
+          "cacheReadTokens": 38555776,
           "cacheWriteTokens": 0,
-          "totalTokens": 40737956,
-          "costTotal": 7.05086
+          "totalTokens": 40511702,
+          "costTotal": 6.969151
         },
         {
           "label": "Automation",
-          "assistantMessages": 27,
-          "inputTokens": 149475,
-          "outputTokens": 3832,
-          "cacheReadTokens": 526848,
+          "assistantMessages": 15,
+          "inputTokens": 141006,
+          "outputTokens": 2156,
+          "cacheReadTokens": 424064,
           "cacheWriteTokens": 0,
-          "totalTokens": 680155,
-          "costTotal": 0.29102
-        },
-        {
-          "label": "GitHub work",
-          "assistantMessages": 32,
-          "inputTokens": 59369,
-          "outputTokens": 6282,
-          "cacheReadTokens": 559872,
-          "cacheWriteTokens": 0,
-          "totalTokens": 625523,
-          "costTotal": 0.207015
+          "totalTokens": 567226,
+          "costTotal": 0.250825
         }
       ],
       "byModel": [
         {
           "label": "gpt-5.1-codex",
-          "assistantMessages": 265,
-          "inputTokens": 1567800,
-          "outputTokens": 112149,
-          "cacheReadTokens": 32891904,
+          "assistantMessages": 210,
+          "inputTokens": 1458737,
+          "outputTokens": 103313,
+          "cacheReadTokens": 32109184,
           "cacheWriteTokens": 0,
-          "totalTokens": 34571853,
-          "costTotal": 7.192728
+          "totalTokens": 33671234,
+          "costTotal": 6.870199
         },
         {
           "label": "gpt-5-mini",
-          "assistantMessages": 100,
-          "inputTokens": 522401,
-          "outputTokens": 26244,
-          "cacheReadTokens": 6923136,
+          "assistantMessages": 94,
+          "inputTokens": 512037,
+          "outputTokens": 25001,
+          "cacheReadTokens": 6870656,
           "cacheWriteTokens": 0,
-          "totalTokens": 7471781,
-          "costTotal": 0.356167
+          "totalTokens": 7407694,
+          "costTotal": 0.349778
         }
       ]
     },
     {
       "day": "2026-03-19",
-      "assistantMessages": 219,
-      "inputTokens": 1575758,
-      "outputTokens": 47226,
-      "cacheReadTokens": 17302016,
+      "assistantMessages": 190,
+      "inputTokens": 1454933,
+      "outputTokens": 43297,
+      "cacheReadTokens": 16708224,
       "cacheWriteTokens": 0,
-      "totalTokens": 18925000,
-      "costTotal": 6.866005,
+      "totalTokens": 18206454,
+      "costTotal": 6.576635,
       "byCategory": [
         {
           "label": "General",
-          "assistantMessages": 219,
-          "inputTokens": 1575758,
-          "outputTokens": 47226,
-          "cacheReadTokens": 17302016,
+          "assistantMessages": 190,
+          "inputTokens": 1454933,
+          "outputTokens": 43297,
+          "cacheReadTokens": 16708224,
           "cacheWriteTokens": 0,
-          "totalTokens": 18925000,
-          "costTotal": 6.866005
+          "totalTokens": 18206454,
+          "costTotal": 6.576635
         }
       ],
       "byModel": [
         {
           "label": "gpt-5.4",
-          "assistantMessages": 159,
-          "inputTokens": 527662,
-          "outputTokens": 37102,
-          "cacheReadTokens": 11329664,
+          "assistantMessages": 156,
+          "inputTokens": 511529,
+          "outputTokens": 36519,
+          "cacheReadTokens": 11315712,
           "cacheWriteTokens": 0,
-          "totalTokens": 11894428,
-          "costTotal": 4.708101
+          "totalTokens": 11863760,
+          "costTotal": 4.655536
         },
         {
           "label": "gpt-5.1-codex",
-          "assistantMessages": 60,
-          "inputTokens": 1048096,
-          "outputTokens": 10124,
-          "cacheReadTokens": 5972352,
+          "assistantMessages": 34,
+          "inputTokens": 943404,
+          "outputTokens": 6778,
+          "cacheReadTokens": 5392512,
           "cacheWriteTokens": 0,
-          "totalTokens": 7030572,
-          "costTotal": 2.157904
+          "totalTokens": 6342694,
+          "costTotal": 1.921099
         }
       ]
     },
     {
       "day": "2026-03-20",
-      "assistantMessages": 276,
-      "inputTokens": 1666323,
-      "outputTokens": 58430,
-      "cacheReadTokens": 23656192,
+      "assistantMessages": 252,
+      "inputTokens": 1565223,
+      "outputTokens": 53791,
+      "cacheReadTokens": 22930048,
       "cacheWriteTokens": 0,
-      "totalTokens": 25380945,
-      "costTotal": 10.956306,
+      "totalTokens": 24549062,
+      "costTotal": 10.452435,
       "byCategory": [
         {
           "label": "General",
-          "assistantMessages": 260,
-          "inputTokens": 1601558,
-          "outputTokens": 54496,
-          "cacheReadTokens": 23176576,
+          "assistantMessages": 252,
+          "inputTokens": 1565223,
+          "outputTokens": 53791,
+          "cacheReadTokens": 22930048,
           "cacheWriteTokens": 0,
-          "totalTokens": 24832630,
-          "costTotal": 10.615479
-        },
-        {
-          "label": "GitHub work",
-          "assistantMessages": 14,
-          "inputTokens": 50142,
-          "outputTokens": 3533,
-          "cacheReadTokens": 471424,
-          "cacheWriteTokens": 0,
-          "totalTokens": 525099,
-          "costTotal": 0.296206
-        },
-        {
-          "label": "Automation",
-          "assistantMessages": 2,
-          "inputTokens": 14623,
-          "outputTokens": 401,
-          "cacheReadTokens": 8192,
-          "cacheWriteTokens": 0,
-          "totalTokens": 23216,
-          "costTotal": 0.044621
+          "totalTokens": 24549062,
+          "costTotal": 10.452435
         }
       ],
       "byModel": [
         {
           "label": "gpt-5.4",
-          "assistantMessages": 276,
-          "inputTokens": 1666323,
-          "outputTokens": 58430,
-          "cacheReadTokens": 23656192,
+          "assistantMessages": 252,
+          "inputTokens": 1565223,
+          "outputTokens": 53791,
+          "cacheReadTokens": 22930048,
           "cacheWriteTokens": 0,
-          "totalTokens": 25380945,
-          "costTotal": 10.956306
+          "totalTokens": 24549062,
+          "costTotal": 10.452435
         }
       ]
     },
     {
       "day": "2026-03-21",
-      "assistantMessages": 241,
-      "inputTokens": 865895,
-      "outputTokens": 51884,
-      "cacheReadTokens": 22387584,
+      "assistantMessages": 93,
+      "inputTokens": 416376,
+      "outputTokens": 17566,
+      "cacheReadTokens": 8756352,
       "cacheWriteTokens": 0,
-      "totalTokens": 23305363,
-      "costTotal": 8.539894,
+      "totalTokens": 9190294,
+      "costTotal": 3.493518,
       "byCategory": [
-        {
-          "label": "Build work",
-          "assistantMessages": 145,
-          "inputTokens": 437108,
-          "outputTokens": 33958,
-          "cacheReadTokens": 13611008,
-          "cacheWriteTokens": 0,
-          "totalTokens": 14082074,
-          "costTotal": 5.004892
-        },
         {
           "label": "General",
           "assistantMessages": 93,
@@ -564,148 +481,30 @@
           "cacheWriteTokens": 0,
           "totalTokens": 9190294,
           "costTotal": 3.493518
-        },
-        {
-          "label": "Automation",
-          "assistantMessages": 3,
-          "inputTokens": 12411,
-          "outputTokens": 360,
-          "cacheReadTokens": 20224,
-          "cacheWriteTokens": 0,
-          "totalTokens": 32995,
-          "costTotal": 0.041483
         }
       ],
       "byModel": [
         {
           "label": "gpt-5.4",
-          "assistantMessages": 241,
-          "inputTokens": 865895,
-          "outputTokens": 51884,
-          "cacheReadTokens": 22387584,
+          "assistantMessages": 93,
+          "inputTokens": 416376,
+          "outputTokens": 17566,
+          "cacheReadTokens": 8756352,
           "cacheWriteTokens": 0,
-          "totalTokens": 23305363,
-          "costTotal": 8.539894
-        }
-      ]
-    },
-    {
-      "day": "2026-03-22",
-      "assistantMessages": 195,
-      "inputTokens": 6194648,
-      "outputTokens": 43914,
-      "cacheReadTokens": 22386816,
-      "cacheWriteTokens": 0,
-      "totalTokens": 28625378,
-      "costTotal": 20.919789,
-      "byCategory": [
-        {
-          "label": "Build work",
-          "assistantMessages": 174,
-          "inputTokens": 5681452,
-          "outputTokens": 41876,
-          "cacheReadTokens": 21022336,
-          "cacheWriteTokens": 0,
-          "totalTokens": 26745664,
-          "costTotal": 20.087354
-        },
-        {
-          "label": "General",
-          "assistantMessages": 21,
-          "inputTokens": 513196,
-          "outputTokens": 2038,
-          "cacheReadTokens": 1364480,
-          "cacheWriteTokens": 0,
-          "totalTokens": 1879714,
-          "costTotal": 0.832435
-        }
-      ],
-      "byModel": [
-        {
-          "label": "gpt-5.4",
-          "assistantMessages": 174,
-          "inputTokens": 5681452,
-          "outputTokens": 41876,
-          "cacheReadTokens": 21022336,
-          "cacheWriteTokens": 0,
-          "totalTokens": 26745664,
-          "costTotal": 20.087354
-        },
-        {
-          "label": "gpt-5.1-codex",
-          "assistantMessages": 20,
-          "inputTokens": 513196,
-          "outputTokens": 2038,
-          "cacheReadTokens": 1364480,
-          "cacheWriteTokens": 0,
-          "totalTokens": 1879714,
-          "costTotal": 0.832435
-        },
-        {
-          "label": "gpt-5-mini",
-          "assistantMessages": 1,
-          "inputTokens": 0,
-          "outputTokens": 0,
-          "cacheReadTokens": 0,
-          "cacheWriteTokens": 0,
-          "totalTokens": 0,
-          "costTotal": 0.0
-        }
-      ]
-    },
-    {
-      "day": "2026-03-23",
-      "assistantMessages": 5,
-      "inputTokens": 0,
-      "outputTokens": 0,
-      "cacheReadTokens": 0,
-      "cacheWriteTokens": 0,
-      "totalTokens": 0,
-      "costTotal": 0.0,
-      "byCategory": [
-        {
-          "label": "General",
-          "assistantMessages": 5,
-          "inputTokens": 0,
-          "outputTokens": 0,
-          "cacheReadTokens": 0,
-          "cacheWriteTokens": 0,
-          "totalTokens": 0,
-          "costTotal": 0.0
-        }
-      ],
-      "byModel": [
-        {
-          "label": "gpt-4.1-nano",
-          "assistantMessages": 3,
-          "inputTokens": 0,
-          "outputTokens": 0,
-          "cacheReadTokens": 0,
-          "cacheWriteTokens": 0,
-          "totalTokens": 0,
-          "costTotal": 0.0
-        },
-        {
-          "label": "gpt-5-mini",
-          "assistantMessages": 2,
-          "inputTokens": 0,
-          "outputTokens": 0,
-          "cacheReadTokens": 0,
-          "cacheWriteTokens": 0,
-          "totalTokens": 0,
-          "costTotal": 0.0
+          "totalTokens": 9190294,
+          "costTotal": 3.493518
         }
       ]
     },
     {
       "day": "2026-03-25",
-      "assistantMessages": 119,
-      "inputTokens": 2046010,
-      "outputTokens": 47732,
-      "cacheReadTokens": 4548864,
+      "assistantMessages": 78,
+      "inputTokens": 1447885,
+      "outputTokens": 17579,
+      "cacheReadTokens": 2529664,
       "cacheWriteTokens": 0,
-      "totalTokens": 6642606,
-      "costTotal": 6.968221,
+      "totalTokens": 3995128,
+      "costTotal": 4.515814,
       "byCategory": [
         {
           "label": "General",
@@ -716,28 +515,18 @@
           "cacheWriteTokens": 0,
           "totalTokens": 3995128,
           "costTotal": 4.515814
-        },
-        {
-          "label": "Build work",
-          "assistantMessages": 41,
-          "inputTokens": 598125,
-          "outputTokens": 30153,
-          "cacheReadTokens": 2019200,
-          "cacheWriteTokens": 0,
-          "totalTokens": 2647478,
-          "costTotal": 2.452408
         }
       ],
       "byModel": [
         {
           "label": "gpt-5.4",
-          "assistantMessages": 118,
-          "inputTokens": 2046010,
-          "outputTokens": 47732,
-          "cacheReadTokens": 4548864,
+          "assistantMessages": 77,
+          "inputTokens": 1447885,
+          "outputTokens": 17579,
+          "cacheReadTokens": 2529664,
           "cacheWriteTokens": 0,
-          "totalTokens": 6642606,
-          "costTotal": 6.968221
+          "totalTokens": 3995128,
+          "costTotal": 4.515814
         },
         {
           "label": "delivery-mirror",
@@ -851,24 +640,14 @@
     },
     {
       "day": "2026-03-28",
-      "assistantMessages": 239,
-      "inputTokens": 794518,
-      "outputTokens": 83574,
-      "cacheReadTokens": 7183616,
+      "assistantMessages": 121,
+      "inputTokens": 572647,
+      "outputTokens": 43068,
+      "cacheReadTokens": 4137600,
       "cacheWriteTokens": 0,
-      "totalTokens": 8061708,
-      "costTotal": 5.035809,
+      "totalTokens": 4753315,
+      "costTotal": 3.112038,
       "byCategory": [
-        {
-          "label": "General",
-          "assistantMessages": 185,
-          "inputTokens": 620080,
-          "outputTokens": 55406,
-          "cacheReadTokens": 4954112,
-          "cacheWriteTokens": 0,
-          "totalTokens": 5629598,
-          "costTotal": 3.619818
-        },
         {
           "label": "Build work",
           "assistantMessages": 54,
@@ -878,18 +657,28 @@
           "cacheWriteTokens": 0,
           "totalTokens": 2432110,
           "costTotal": 1.415991
+        },
+        {
+          "label": "General",
+          "assistantMessages": 67,
+          "inputTokens": 398209,
+          "outputTokens": 14900,
+          "cacheReadTokens": 1908096,
+          "cacheWriteTokens": 0,
+          "totalTokens": 2321205,
+          "costTotal": 1.696047
         }
       ],
       "byModel": [
         {
           "label": "gpt-5.4",
-          "assistantMessages": 237,
-          "inputTokens": 794518,
-          "outputTokens": 83574,
-          "cacheReadTokens": 7183616,
+          "assistantMessages": 119,
+          "inputTokens": 572647,
+          "outputTokens": 43068,
+          "cacheReadTokens": 4137600,
           "cacheWriteTokens": 0,
-          "totalTokens": 8061708,
-          "costTotal": 5.035809
+          "totalTokens": 4753315,
+          "costTotal": 3.112038
         },
         {
           "label": "delivery-mirror",
@@ -1351,23 +1140,33 @@
     },
     {
       "day": "2026-04-09",
-      "assistantMessages": 808,
-      "inputTokens": 7596655,
-      "outputTokens": 263205,
-      "cacheReadTokens": 53226240,
+      "assistantMessages": 940,
+      "inputTokens": 9079475,
+      "outputTokens": 304823,
+      "cacheReadTokens": 61360256,
       "cacheWriteTokens": 0,
-      "totalTokens": 61086100,
-      "costTotal": 36.246273,
+      "totalTokens": 70744554,
+      "costTotal": 42.611097,
       "byCategory": [
         {
           "label": "Automation",
-          "assistantMessages": 784,
-          "inputTokens": 7425713,
-          "outputTokens": 258211,
-          "cacheReadTokens": 52425600,
+          "assistantMessages": 904,
+          "inputTokens": 8608638,
+          "outputTokens": 293494,
+          "cacheReadTokens": 60063488,
           "cacheWriteTokens": 0,
-          "totalTokens": 60109524,
-          "costTotal": 35.543848
+          "totalTokens": 68965620,
+          "costTotal": 40.939877
+        },
+        {
+          "label": "General",
+          "assistantMessages": 22,
+          "inputTokens": 407327,
+          "outputTokens": 8388,
+          "cacheReadTokens": 553344,
+          "cacheWriteTokens": 0,
+          "totalTokens": 969059,
+          "costTotal": 1.282474
         },
         {
           "label": "Build work",
@@ -1378,28 +1177,18 @@
           "cacheWriteTokens": 0,
           "totalTokens": 809875,
           "costTotal": 0.388746
-        },
-        {
-          "label": "General",
-          "assistantMessages": 10,
-          "inputTokens": 107432,
-          "outputTokens": 2053,
-          "cacheReadTokens": 57216,
-          "cacheWriteTokens": 0,
-          "totalTokens": 166701,
-          "costTotal": 0.313679
         }
       ],
       "byModel": [
         {
           "label": "gpt-5.4",
-          "assistantMessages": 807,
-          "inputTokens": 7596655,
-          "outputTokens": 263205,
-          "cacheReadTokens": 53226240,
+          "assistantMessages": 939,
+          "inputTokens": 9079475,
+          "outputTokens": 304823,
+          "cacheReadTokens": 61360256,
           "cacheWriteTokens": 0,
-          "totalTokens": 61086100,
-          "costTotal": 36.246273
+          "totalTokens": 70744554,
+          "costTotal": 42.611097
         },
         {
           "label": "delivery-mirror",
